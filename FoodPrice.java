@@ -12,4 +12,8 @@ public class FoodPrice {
     String currency;
     double price;
     double usdprice;
+
+    public FoodPrice() {
+        
+    }
 }

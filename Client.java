@@ -35,7 +35,7 @@ public class Client {
         // PriceDetails pd = new PriceDetails(dataLine[8], dataLine[9], dataLine[10]);
         // Price p = new Price(dataLine[12], dataLine[13]);
         Record r = new Record(Integer.parseInt(dataLine[0].substring(5, 7)), Integer.parseInt(dataLine[0].substring(0, 4)), dataLine[1], dataLine[2], dataLine[3], 
-                              dataLine[4] != null && !dataLine[4].isBlank() ? Double.parseDouble(dataLine[4]) : 0d, 
+                              dataLine[4] != null && !dataLine[4].isEmpty() ? Double.parseDouble(dataLine[4]) : 0d, 
                               dataLine[5] != null && !dataLine[5].isEmpty()? Double.parseDouble(dataLine[5]) : 0d, dataLine[6], dataLine[7], dataLine[8], dataLine[9], dataLine[10], 
                               Double.parseDouble(dataLine[12]), Double.parseDouble(dataLine[13]));
         recordList.add(r);

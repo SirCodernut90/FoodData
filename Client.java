@@ -42,10 +42,10 @@ public class Client {
         // System.out.println(i);
 
     }
-
-    System.out.println("The format of each row is: " + Arrays.toString(labels));
-    System.out.println(recordList.get(0));
-    System.out.println(recordList.get(1));
+    //Testing
+    // System.out.println("The format of each row is: " + Arrays.toString(labels));
+    // System.out.println(recordList.get(0));
+    // System.out.println(recordList.get(1));
 
     }
     

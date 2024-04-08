@@ -3,15 +3,19 @@ public class DateCategorizer {
     public int year;
 
     public DateCategorizer(int m, int y) {
-        month = m;
-        year = y;
+        this.month = m;
+        this.year = y;
     }
 
     public int getMonth() {
-        return month;
+        return this.month;
     }
 
     public int getYear() {
-        return year;
+        return this.year;
+    }
+
+    public String toString() {
+        return this.month + "/" + this.year;
     }
 }

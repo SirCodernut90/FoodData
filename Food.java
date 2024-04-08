@@ -3,15 +3,19 @@ public class Food {
     private String commodity;
 
     public Food(String cat, String com) {
-        category = cat;
-        commodity = com;
+        this.category = cat;
+        this.commodity = com;
     }
 
     public String getCategory() {
-        return category;
+        return this.category;
     }
 
     public String getCommodity() {
-        return commodity;
+        return this.commodity;
+    }
+
+    public String toString() {
+        return ", Category: " + this.category + ", Commodity: " + this.commodity;
     }
 }

@@ -4,14 +4,18 @@ public class Price {
 
     public Price(double price, double usd) {
         this.price = price;
-        usdPrice = usd;
+        this.usdPrice = usd;
     }
 
     public double getPrice() {
-        return price;
+        return this.price;
     }
 
     public double getUSDPrice() {
-        return usdPrice;
+        return this.usdPrice;
+    }
+
+    public String toString() {
+        return ", Price: " + this.price + ", USD Price: " + this.usdPrice;
     }
 }

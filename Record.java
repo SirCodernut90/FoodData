@@ -1,4 +1,6 @@
-public class Record {
+import java.util.Collections;
+
+public class Record implements Comparable<Record> {
     DateCategorizer date;
     Location location;
     Coordinates coord;
@@ -17,6 +19,16 @@ public class Record {
         food = new Food(cat, com);
         pd = new PriceDetails(u, pf, pt);
         this.price = new Price(price, usd);
+    }
+
+    public int compareTo(Record other) {
+        if (price.getPrice() == other.price.getPrice())
+            return 0;
+        
+        if (this.price.getPrice() > other.price.getPrice())
+            return 1;
+        else
+            return -1;
     }
 
     public String toString() {

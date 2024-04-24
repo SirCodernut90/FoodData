@@ -35,7 +35,7 @@ public class Dataset extends ArrayList<Record> {
     public double averagePrice(int x, int y) {
         System.out.print("The average price of the records from range ");
         System.out.print(x + ", to ");
-        System.out.print(y + ", is ");
+        System.out.print(y + ", is : $");
         double sum = 0;
         int counter = 0;
         if (y < size() && x < y) {
@@ -45,6 +45,19 @@ public class Dataset extends ArrayList<Record> {
             }
         }
         
+        return (sum/counter);
+    }
+    // This finds the average price off a specific market location
+    public double averagePrice(String market) {
+        System.out.print("The average price of a commodity in " + market + " is : $" );
+        double sum = 0;
+        int counter = 0;
+        for (int i = 0; i < size(); i++) {
+            if (get(i).location.getMarket().equals(market)) {
+                sum += get(i).price.getPrice();
+                counter++;
+            }
+        }
         return (sum/counter);
     }
 }

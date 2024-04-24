@@ -31,4 +31,14 @@ public class Dataset extends ArrayList<Record> {
             }
         }
     }
+
+    public double averagePrice() {
+        double sum = 0;
+        int counter = 0;
+        for (int i = 0; i < size(); i++) {
+            sum += get(i).price.getPrice();
+            counter++;
+        }
+        return (sum/counter);
+    }
 }

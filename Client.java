@@ -41,12 +41,14 @@ public class Client {
         // System.out.println(recordList.get(0));
         // System.out.println(recordList.get(1));
 
-        set.sort();
-        System.out.println(set.get(0).price.getPrice());
-        System.out.println(set.get(1).price.getPrice());
-        System.out.println(set.get(2).price.getPrice());
-        System.out.println(set.get(3).price.getPrice());
-        System.out.println(set.get(4).price.getPrice());
+        // set.sort();
+        // System.out.println(set.get(0).price.getPrice());
+        // System.out.println(set.get(1).price.getPrice());
+        // System.out.println(set.get(2).price.getPrice());
+        // System.out.println(set.get(3).price.getPrice());
+        // System.out.println(set.get(4).price.getPrice());
+
+        System.out.println(set.averagePrice());
 
     }
 }

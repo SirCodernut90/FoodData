@@ -48,7 +48,7 @@ public class Client {
         // System.out.println(set.get(3).price.getPrice());
         // System.out.println(set.get(4).price.getPrice());
 
-        System.out.println(set.averagePrice());
+        System.out.println(set.averagePrice(0, 1434));
 
     }
 }

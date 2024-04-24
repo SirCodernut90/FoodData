@@ -31,14 +31,20 @@ public class Dataset extends ArrayList<Record> {
             }
         }
     }
-
-    public double averagePrice() {
+    // finding the average price of a specific range of values (x to y)
+    public double averagePrice(int x, int y) {
+        System.out.print("The average price of the records from range ");
+        System.out.print(x + ", to ");
+        System.out.print(y + ", is ");
         double sum = 0;
         int counter = 0;
-        for (int i = 0; i < size(); i++) {
-            sum += get(i).price.getPrice();
-            counter++;
+        if (y < size() && x < y) {
+            for (int i = x; i < y; i++) {
+                sum += get(i).price.getPrice();
+                counter++;
+            }
         }
+        
         return (sum/counter);
     }
 }
